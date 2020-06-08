@@ -1,19 +1,14 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "name": "caneta bic preta",
-            "price": 5.80
-        },
-        {
-            "id": 2,
-            "name": "Macbook pro",
-            "price": 20000.00
-        },
-        {
-            "id": 3,
-            "name": "caneca de café",
-            "price": 10.00
-        }
-    ]
+  "products": [
+    {
+      "name": "",
+      "price": null,
+      "id": 1
+    },
+    {
+      "name": "energetico 1L",
+      "price": 15,
+      "id": 2
+    }
+  ]
 }
