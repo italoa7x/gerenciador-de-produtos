@@ -19,6 +19,11 @@ import { ProductsCrudComponent } from './components/product/products-crud/produc
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { ProductReadComponent } from './components/product/product-read/product-read.component';
+import { ProductsComponent } from './src/app/components/products/products.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -29,6 +34,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     HomeComponent,
     ProductsCrudComponent,
     ProductCreateComponent,
+    ProductReadComponent,
+    ProductsComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,7 +50,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatButtonModule,
     MatSnackBarModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,6 +9,16 @@
       "name": "energetico 1L",
       "price": 15,
       "id": 2
+    },
+    {
+      "name": "",
+      "price": null,
+      "id": 3
+    },
+    {
+      "name": "Queijo coalho",
+      "price": 17,
+      "id": 4
     }
   ]
 }

@@ -23,5 +23,9 @@ export class ProductService {
   storage(product: Product): Observable<Product>{
     return this.httpClient.post<Product>(this.BASE_URL, product);
   }
+
+  index():  Observable<Product[]> {
+    return this.httpClient.get<Product[]>(this.BASE_URL);
+  }
   
 }
