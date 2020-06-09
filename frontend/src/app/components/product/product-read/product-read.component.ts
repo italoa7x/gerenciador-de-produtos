@@ -9,7 +9,7 @@ import { Product } from 'src/app/models/products.model';
 })
 export class ProductReadComponent implements OnInit {
   products: Product[];
-  displayedColumns = ['id', 'name', 'price'];
+  displayedColumns = ['id', 'name', 'price', 'action'];
 
   constructor(private productService: ProductService) { }
 
@@ -19,4 +19,9 @@ export class ProductReadComponent implements OnInit {
     });
   }
 
+  deletarProduto(id: string): void{
+    this.productService.delete(id).subscribe(() => {
+      this.productService.showSnackBar('Produto excluido.');
+    });
+  }
 }
