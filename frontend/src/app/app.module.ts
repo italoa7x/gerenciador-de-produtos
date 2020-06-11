@@ -1,3 +1,4 @@
+import { MatTableModule } from '@angular/material/table';
 import { routing } from 'src/app-routes.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -20,10 +21,6 @@ import { ProductCreateComponent } from './components/product/product-create/prod
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { ProductReadComponent } from './components/product/product-read/product-read.component';
-import { ProductsComponent } from './src/app/components/products/products.component';
-import { MatTableModule } from '@angular/material/table';
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatSortModule } from '@angular/material/sort';
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
 
@@ -37,7 +34,6 @@ import { ProductDeleteComponent } from './components/product/product-delete/prod
     ProductsCrudComponent,
     ProductCreateComponent,
     ProductReadComponent,
-    ProductsComponent,
     ProductUpdateComponent,
     ProductDeleteComponent,
   ],
@@ -56,8 +52,7 @@ import { ProductDeleteComponent } from './components/product/product-delete/prod
     MatInputModule,
     MatFormFieldModule,
     MatTableModule,
-    MatPaginatorModule,
-    MatSortModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

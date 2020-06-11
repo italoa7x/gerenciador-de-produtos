@@ -18,20 +18,20 @@
       </ng-container>
        
       <ng-container matColumnDef="action">
-        <th mat-header-cell *matHeaderCellDef></th>
+        <th mat-header-cell *matHeaderCellDef>Ações</th>
         <td mat-cell *matCellDef="let row">
           <!--Botão de editar produto-->
-          <button mat-button routerLink="/products/update/{{ row.id }}">
-            <i class="material-icons">
+          <a routerLink="/products/update/{{ row.id }}" class="edit">
+            <i class="material-icons" color="war">
               edit
             </i>
-          </button>
+          </a>
           <!--Botão de excluir produto-->
-          <button mat-button routerLink="/products/delete/{{ row.id }}">
-            <i class="material-icons">
+          <a routerLink="/products/delete/{{ row.id }}" class="delete">
+            <i class="material-icons" >
               delete
             </i>
-          </button>
+          </a>
         </td>
       </ng-container>
 
